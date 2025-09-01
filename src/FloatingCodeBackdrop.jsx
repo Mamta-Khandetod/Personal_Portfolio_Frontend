@@ -94,9 +94,9 @@ export default function FloatingCodeBackdrop({ count = 20, className = "h-full" 
             {/* Optional centered content area (enable pointer events) */}
             <div className={`grid grid-col-2 items-center  flex-col px-2 lg:px-12  ${inView ? "animate-slideInLeft" : "opacity-0"
                 }`}>
-                <div className='font-extrabold text-3xl text-gray-400 font-josefin'>Hello I'm</div>
-                <div className=' text-8xl text-white font-wdxl initial-hidden animate-slideInLeft'>Mamta Khandetod</div>
-                <div className=' text-5xl text-blue-300 font-medium font-wdxl mt-3  animate-glow'>Full Stack Developer</div>
+                <div className='font-extrabold text-xl lg:text-3xl text-gray-400 font-josefin'>Hello I'm</div>
+                <div className=' text-6xl lg:text-8xl text-white font-wdxl initial-hidden animate-slideInLeft'>Mamta Khandetod</div>
+                <div className='text-2xl lg:text-5xl text-blue-300 font-medium font-wdxl mt-3  animate-glow'>Full Stack Developer</div>
             </div>
 
             {/* Floating keyframes */}
@@ -112,5 +112,6 @@ export default function FloatingCodeBackdrop({ count = 20, className = "h-full" 
         </div>
     );
 }
+
 
 
