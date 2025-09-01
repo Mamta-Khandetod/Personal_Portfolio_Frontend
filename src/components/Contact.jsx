@@ -72,7 +72,7 @@ export default function Contact() {
             <div className="flex gap-6 sm:gap-8 justify-center items-center py-6 flex-wrap">
                 {/* GitHub */}
                 <div className="group relative">
-                    <a href='https://github.com/Mamta-Khandetod' target='_blank'>
+                    <a href='https://github.com/Mamta-Khandetod' target='_blank' rel='noreferrer'>
                         <Github className="w-10 h-10 sm:w-12 sm:h-12 text-gray-300 cursor-pointer 
                            transition-all duration-500 ease-in-out
                            group-hover:text-white group-hover:scale-125 
@@ -83,7 +83,7 @@ export default function Contact() {
 
                 {/* LinkedIn */}
                 <div className="group relative">
-                    <a href='https://in.linkedin.com/in/mamta-khandetod-1a0979172' target='_blank'>
+                    <a href='https://in.linkedin.com/in/mamta-khandetod-1a0979172' target='_blank' rel='noreferrer'>
                         <Linkedin className="w-10 h-10 sm:w-12 sm:h-12 text-gray-300 cursor-pointer 
                              transition-all duration-500 ease-in-out
                              group-hover:text-blue-400 group-hover:scale-125 
@@ -94,7 +94,7 @@ export default function Contact() {
 
                 {/* Mail */}
                 <div className="group relative">
-                    <a href='https://mail.google.com/mail/?view=cm&to=mamtakhandetod1999@gmail.com' target='_blank'>
+                    <a href='https://mail.google.com/mail/?view=cm&to=mamtakhandetod1999@gmail.com' target='_blank' rel='noreferrer'>
                         <Mail className="w-10 h-10 sm:w-12 sm:h-12 text-gray-300 cursor-pointer 
                          transition-all duration-500 ease-in-out
                          group-hover:text-red-400 group-hover:scale-125 
@@ -106,3 +106,4 @@ export default function Contact() {
         </section>
     )
 }
+
