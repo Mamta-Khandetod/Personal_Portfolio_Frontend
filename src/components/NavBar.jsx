@@ -13,8 +13,8 @@ export default function NavBar() {
         }
     }
 
-    const onClickMenuButton = () => {
-        setIsMobileMenuOpen(true);
+    const onClickMenuButton = (value) => {
+        setIsMobileMenuOpen(value);
     }
 
     return (
@@ -66,7 +66,7 @@ export default function NavBar() {
 
                             </div>
                             <button
-                                onClick={onClickMenuButton}
+                                onClick={()=>onClickMenuButton(false)}
                                 className={`p-2 rounded-lg hover:bg-gray-800 transition-colors duration-300 ${isMobileMenuOpen ? 'hamburger-active' : ''}`}
                                 aria-label="Toggle menu"
                             >
@@ -76,7 +76,7 @@ export default function NavBar() {
                     </div>
                     :
                     <button
-                        onClick={onClickMenuButton}
+                        onClick={()=>onClickMenuButton(true)}
                         className={`p-2 rounded-lg hover:bg-gray-800 transition-colors duration-300 ${isMobileMenuOpen ? 'hamburger-active' : ''}`}
                         aria-label="Toggle menu"
                     >
@@ -98,3 +98,4 @@ function TabOption({ title, onClick, id }) {
         <div className='hover:text-blue-400 cursor-pointer' onClick={() => onClick(id)}>{title}</div>
     )
 }
+
