@@ -90,7 +90,7 @@ function ExperienceWithScrollbar() {
         elements.forEach(el => observer.observe(el));
 
         return () => observer.disconnect();
-    }, [experiences]);
+    }, []);
 
     return (
         <div className="flex justify-center w-full min-h-screen  py-16">
@@ -235,5 +235,6 @@ function ExperienceWithScrollbar() {
         </div >
     );
 }
+
 
 
