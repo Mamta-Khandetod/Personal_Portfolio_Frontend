@@ -1,7 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 
-export default function FloatingCodeBackdrop({ count = 20, className = "h-full" }) {
-    const TAGS = [
+ const TAGS = [
         "<div></div>",
         "<h1></h1>",
         "<Button />",
@@ -29,8 +28,8 @@ export default function FloatingCodeBackdrop({ count = 20, className = "h-full" 
         "useState()",
         "map(() => {})",
     ];
-
-    const items = useMemo(() => {
+export default function FloatingCodeBackdrop({ count = 20, className = "h-full" }) {
+       const items = useMemo(() => {
         const arr = [];
         for (let i = 0; i < count; i++) {
             const text = TAGS[i % TAGS.length];
@@ -113,3 +112,4 @@ export default function FloatingCodeBackdrop({ count = 20, className = "h-full" 
         </div>
     );
 }
+
